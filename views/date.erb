@@ -4,8 +4,8 @@
     <title>dayyyy</title>
   </head>
   <body>
-    <% preset_date = DateTime.now %>
+    <% preset_date = Date.today.strftime("%A, %B %d, %Y") %>
     <h1>Today</h1>
-    <p>The date is <%Date.today.strftime("%A, %B %d, %Y")%></p>
+    <p>The date is <%=preset_date%></p>
   </body>
 </html>
